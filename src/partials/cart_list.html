@@ -1,0 +1,99 @@
+<section class="cart-section">
+  <div class="container">
+    <h1 class="cart-title">
+      <svg class="cart-icon" width="18" height="18">
+        <use href="./icons/icons.svg#icon-cart"></use>
+      </svg>
+      Cart (<span class="js-cart-span">0</span>)
+    </h1>
+    <!-- (3) -> selected goods -->
+    <div class="all-cart-content js-all-cart-content">
+      <div class="cart-container js-cart-container">
+        <button class="delete-all js-delete-all">
+          Delete all
+          <svg class="" width="24" height="24">
+            <use href="./icons/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="cart-list list js-cart-list"></ul>
+      </div>
+      <div class="order-container js-order-container"></div>
+    </div>
+    <!-- ======= EMPTY CART ======= -->
+    <div class="empty-cart visually-hidden js-empty-cart">
+      <picture class="empty-cart-img">
+        <!-- Desktop screen 1440px -->
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            ./images/cart/basket-desc.webp    1x,
+            ./images/cart/basket-desc@2x.webp 2x
+          "
+        />
+        <!-- Tablet screen -->
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./images/cart/basket-tablet.webp    1x,
+            ./images/cart/basket-tablet@2x.webp 2x
+          "
+        />
+        <!-- Mobile screen -->
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./images/cart/basket-mob.webp    1x,
+            ./images/cart/basket-mob@2x.webp 2x
+          "
+        />
+        <img
+          src="./images/cart/basket-mob.webp"
+          alt="Empty Basket"
+          width="132"
+          height="114"
+          loading="lazy"
+        />
+      </picture>
+      <h3 class="empty-cart-title">
+        Your basket is<span class="accent"> empty...</span>
+      </h3>
+      <p class="empty-cart-descr">
+        Go to the main page to select your favorite products and add them to the
+        cart.
+      </p>
+    </div>
+    <!-- ======= SUCCESS MODAL ======= -->
+    <div class="backdrop-cart-modal is-hidden js-success" data-modal>
+      <!-- <div class="success-modal">
+        <div class="order-success-window">
+          <button class="success-delete-btn js-close-success" data-modal-close>
+            <svg class="" width="22" height="22">
+              <use href="./icons/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <img
+            srcset="
+              ./images/cart/success.webp    1x,
+              ./images/cart/success@2x.webp 2x
+            "
+            src="./images/cart/success.webp"
+            alt="Success Order"
+            width="140"
+            height="140"
+            loading="lazy"
+          />
+          <div class="success-text">
+            <h2 class="success-title">Order success</h2>
+            <p class="success-descr">
+              Thank you for shopping at Food Boutique. Your order has been
+              received and is now being freshly prepared just for you! Get ready
+              to indulge in nourishing goodness, delivered right to your
+              doorstep. We're thrilled to be part of your journey to better
+              health and happiness.
+            </p>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>

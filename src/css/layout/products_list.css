@@ -1,0 +1,181 @@
+#products-list.section {
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  width: 100%;
+}
+
+#products-list .products-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--indent-col);
+  row-gap: var(--indent-row);
+}
+
+#products-list .product-item {
+  cursor: pointer;
+  position: relative;
+  background-color: var(--color-card-bckg);
+  border-radius: 20px;
+  padding: 20px;
+  flex-basis: calc((100% - (var(--items-number) - 1) * var(--indent-col)) / var(--items-number));
+  transition: box-shadow var(--animation-duration) var(--timing-function);
+}
+
+#products-list .product-item:hover,
+#products-list .product-item:focus {
+  box-shadow:
+    0 9px 17px 0 rgba(0, 0, 0, 0.02),
+    0 42px 46px 0 rgba(0, 0, 0, 0.04),
+    0 105px 125px 0 rgba(0, 0, 0, 0.05),
+    0 208px 286px 0 rgba(0, 0, 0, 0.07);
+
+}
+
+#products-list .product-img-container {
+  padding: 19px 0;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: var(--color-img-bckg);
+}
+
+#products-list .product-name {
+  height: 20px;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+  color: var(--color-text);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#products-list .product-props {
+  margin-top: 10px;
+  display: flex;
+  gap: 9px;
+  flex-wrap: wrap;
+  height: 14px;
+}
+
+#products-list .prop {
+  display: flex;
+  gap: 4px;
+  font-size: 12px;
+  line-height: 1.17;
+}
+
+#products-list .prop-name {
+  color: var(--color-prop-text);
+}
+
+#products-list .product-buy-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+#products-list .price {
+  font-size: 18px;
+  line-height: 1.11;
+  font-weight: 500;
+  align-self: flex-end;
+}
+
+#products-list .btn-buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+}
+
+#products-list .product-discount {
+  position: absolute;
+  top: 3px;
+  right: 10px;
+}
+
+#products-list .nothing-found {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+#products-list .nothing-found-img {
+  margin-top: 20px;
+}
+
+#products-list .nothing-found-message {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+  text-align: center;
+}
+
+/*
+=================================================================
+    TABLET
+=================================================================
+*/
+@media only screen and (min-width: 768px) {
+  #products-list .products-list {
+    --indent-col: 32px;
+    --indent-row: 32px;
+  }
+
+  #products-list .product-item {
+    --items-number: 2;
+  }
+
+  #products-list .product-discount {
+    top: -3px;
+  }
+
+  #products-list .product-name,
+  #products-list .price {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  #products-list .product-name {
+    height: 24px;
+  }
+}
+
+/*
+=================================================================
+    DESKTOP
+=================================================================
+*/
+@media only screen and (min-width: 1272px) {
+  #products-list .products-list {
+    width: 925px;
+    --indent-col: 20px;
+    --indent-row: 40px;
+  }
+
+  #products-list .product-item {
+    --items-number: 3;
+  }
+
+  #products-list .product-buy-container {
+    margin-top: 20px;
+  }
+
+  #products-list .product-props {
+    height: 37px;
+    width: 240px;
+  };
+
+  #products-list.section {
+    height: 1169px;
+  }
+}

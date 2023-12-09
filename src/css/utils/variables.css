@@ -1,0 +1,42 @@
+:root {
+  --color-text: #010101;
+  --color-bckg: #e8e8e2;
+  --color-card-bckg: #fafafa;
+  --color-img-bckg: #e8e8e2;
+  --color-btn: #6d8434;
+  --color-btn-fill: #e8e8e2;
+  --color-btn-active: #586f1f;
+  --color-btn-small: #e8e8e2;
+  --color-btn-small-fill: #6d8434;
+  --color-btn-small-active: #6d8434;
+  --color-btn-small-fill-active: #e8e8e2;
+  --color-btn-arrow: #fafafa;
+  --color-btn-arrow-fill: #a3a3a3;
+  --color-btn-arrow-active: #6d8434;
+  --color-btn-arrow-fill-active: #fafafa;
+  --color-btn-send: #e8e8e2;
+  --color-btn-send-text-active: #6d8434;
+  --color-btn-cancel: #01010112;
+  --color-btn-cancel-active: #010101;
+  --color-btn-cancel-text-active: #e8e8e2;
+  --color-prop-text: #0101014d;
+  --color-btn-up: #FDC152;
+  --color-btn-up-fill: #010101;
+  --color-btn-up-fill-active: #586f1f;
+
+  --color-car-trunk-dark: #586f1f;
+  --color-car-trunk-light: #8ca44a;
+  --color-car-cabin-dark: #FDC152;
+  --color-car-cabin-light: #ffdd99;
+  --color-car-wheel: #010101;
+
+  --font-main: 'Neue Montreal', sans-serif;
+  --font-logo: 'FONTSPRING DEMO - Quincy CF Black', serif;
+
+  --indent-col: 20px;
+  --indent-row: 20px;
+  --items-number: 1;
+
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 250ms;
+}

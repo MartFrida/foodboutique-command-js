@@ -1,0 +1,59 @@
+<section class="section filters">
+  <h2 class="visually-hidden">Filter Our Products</h2>
+  <div class="filters-block container">
+    <h3 class="filters-subtitle">Filters:</h3>
+    <form class="filters-form-search" action="/filters-block" method="get">
+      <div class="all-types-search-wrap">
+        <div class="search-container">
+          <button
+            type="submit"
+            class="search-button"
+            aria-label="Search button"
+          >
+            <svg class="search-icon" width="20" height="20">
+              <use href="./icons/icons.svg#icon-baseline-search"></use>
+            </svg>
+          </button>
+          <input
+            class="search-input"
+            type="text"
+            id="search"
+            name="search"
+            placeholder="Search for anything"
+            required
+          />
+        </div>
+        <!-- Categories Dropdown -->
+        <div class="select-wrapper">
+          <label class="label-categories visually-hidden" for="categories"
+            >Categories</label
+          >
+          <select class="categories-search" name="categories" id="categories">
+            <option value="" disabled selected>Categories</option>
+          </select>
+          <svg class="categories-icon" width="20" height="20">
+            <use href="./icons/icons.svg#icon-chevron-down"></use>
+          </svg>
+        </div>
+
+        <!-- Sort By -->
+        <div class="sort-block-container">
+          <label class="label-sort visually-hidden" for="sort-by"
+            >Sort list</label
+          >
+          <select class="sort-block-select" name="sort-by" id="sort-by">
+            <option value="a-to-z">A to Z</option>
+            <option value="z-to-a">Z to A</option>
+            <option value="cheap">Cheap</option>
+            <option value="expensive">Expensive</option>
+            <option value="popular">Popular</option>
+            <option value="not-popular">Not popular</option>
+          </select>
+          <svg class="categories-icon" width="20" height="20">
+            <use href="./icons/icons.svg#icon-chevron-down"></use>
+          </svg>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
