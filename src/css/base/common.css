@@ -1,0 +1,130 @@
+/* Reset styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body,
+html {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-main);
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: 0;
+  background-color: var(--color-bckg);
+  color: var(--color-text);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+button {
+  background-color: var(--color-btn);
+  fill: var(--color-btn-fill);
+  color: var(--color-btn-fill);
+  border: none;
+  border-radius: 30px;
+  transition: background-color 250ms ease-in-out;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--color-btn-active);
+}
+
+button:disabled {
+  background-color: var(--color-btn);
+  fill: var(--color-btn-fill);
+}
+
+#btn-up-section {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+}
+
+.btn-up {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--color-btn-up);
+  fill: var(--color-btn-up-fill);
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: scale(0);
+
+  transition:
+    transform var(--animation-duration) var(--timing-function),
+    fill var(--animation-duration) var(--timing-function),
+    box-shadow var(--animation-duration) var(--timing-function);
+}
+
+.btn-up:hover,
+.btn-up:focus {
+  fill: var(--color-btn-up-fill-active);
+  background-color: var(--color-btn-up);
+  box-shadow:
+    1px 2px 1px 0 rgba(46, 47, 66, 0.08),
+    1px 1px 1px 0 rgba(46, 47, 66, 0.16),
+    1px 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1272px) {
+  .btn-up {
+    display: none;
+  }
+}
